@@ -46,9 +46,12 @@ $(document).ready(function() {
 var bankArr = [];
 var item;
 var length;
+  
 //ONLINE
 $(".on").click(function() {
- 
+  $(".allzi").removeClass("active");
+  $(".offzi").removeClass("active");  
+  $(".onzi").addClass("active");
   var length=bankArr.length;
   for (i = 0; i <length; i++) {
 
@@ -72,7 +75,10 @@ $(".on").click(function() {
 
 //OFFLINE
   
-$(".off").click(function() {  
+$(".off").click(function() {
+  $(".allzi").removeClass("active");
+  $(".offzi").addClass("active");  
+  $(".onzi").removeClass("active");
   
   var length=bankArr.length;
   for (i = 0; i <length; i++) {
@@ -94,6 +100,11 @@ $(".off").click(function() {
 //ALL
 
 $(".all").click(function() {
+  $(".allzi").addClass("active");
+  $(".offzi").removeClass("active");  
+  $(".onzi").removeClass("active");
+  
+  
 var length=bankArr.length;
   for (i = 0; i <length; i++) {
 
