@@ -2,10 +2,10 @@ $(document).ready(function() {
   var streamNames = [
     "ESL_SC2",
     "OgamingSC2",
-    "streamerhouse",
-    "bmkibler",
+    "noobs2ninjas",
+    "habathcx",
     "freecodecamp",
-    "saltybet"
+    "cretetion"
   ];
 
   for (let i = 0; i < streamNames.length; i++) {
